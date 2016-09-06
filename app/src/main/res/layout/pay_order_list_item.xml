@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/pay_bookImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书名"
+        android:layout_weight="1"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textView5_bookname"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x2"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView5_count_total"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="价格"
+                android:id="@+id/textView6_discount_price"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:id="@+id/button_delete2"
+            android:src="@drawable/btn_delete_bg"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

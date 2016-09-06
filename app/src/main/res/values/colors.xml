@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_bottom_text_normal">#53575E</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+    <color name="color_button_not_press">#a6cefa</color>
+    <color name="white">#ffffff</color>
+    <color name="fragment_bg">#53363636</color>
+    <color name="gray">#e4e4e4</color>
+    <color name="gray_more">#cfcfcf</color>
+    <color name="transparent">#00000000</color>
+    <color name="base_color_text_gray">#727478</color>
+    <color name="red">#ff0000</color>
+    <color name="red2">#da5252</color>
+    <color name="black">#2d2d2d</color>
+</resources>

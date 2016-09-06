@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="learning.moliying.com.bookstore.ui.AddAddressActivity">
+
+    <include layout="@layout/titlebar_address" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView4_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:text="收货人姓名:"
+            android:textColor="@color/base_color_text_gray"/>
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="收货人姓名"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@mipmap/login_line"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView4_phoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:text="手机号码:"
+            android:textColor="@color/base_color_text_gray"/>
+
+        <EditText
+            android:id="@+id/editText_phoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="手机号码"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@mipmap/login_line"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView4_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:text="收货地址:"
+            android:textColor="@color/base_color_text_gray"/>
+
+        <EditText
+            android:id="@+id/editText_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:hint="收货详细地址"
+            android:lines="5"
+            android:gravity="top"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@mipmap/login_line"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_saveAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/login_button_bg"
+        android:text="保存地址"
+        android:onClick="saveAddressClick"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/button_saveAndSetDefaultAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/login_button_bg"
+        android:text="保存并设为默认地址"
+        android:onClick="saveAndDefaultAddressClick"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</LinearLayout>

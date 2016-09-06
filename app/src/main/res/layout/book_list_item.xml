@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView_bookImage"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="产品标题部分内容。。。"
+        android:id="@+id/textView_bookName"
+        android:textSize="14sp"
+        android:textColor="@color/color_bottom_text_normal"
+        android:layout_toRightOf="@+id/imageView_bookImage"
+        android:layout_alignTop="@+id/imageView_bookImage"
+        android:maxLines="3"
+        android:ellipsize="start"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5星"
+        android:id="@+id/textView3_star"
+        android:layout_alignBottom="@+id/imageView_bookImage"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$100.00"
+        android:textColor="@color/color_bottom_text_normal"
+        android:textSize="12sp"
+        android:id="@+id/textView5_price"
+        android:layout_below="@+id/textView7_discountPrice"
+        android:layout_alignStart="@+id/textView7_discountPrice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 50.00"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textView7_discountPrice"
+        android:layout_above="@+id/textView3_star"
+        android:layout_alignStart="@+id/textView_bookName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0折"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:background="@color/color_bottom_text_press"
+        android:id="@+id/textView8_discount"
+        android:layout_alignBottom="@+id/textView7_discountPrice"
+        android:layout_toStartOf="@+id/textView3_star"
+        android:layout_marginEnd="32dp" />
+
+</RelativeLayout>

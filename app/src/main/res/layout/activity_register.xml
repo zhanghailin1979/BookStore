@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="learning.moliying.com.bookstore.ui.RegisterActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_bottom_text_press"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/textView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/def_button_bg"
+            android:text="返回"
+            android:onClick="backClick"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|top"
+            android:text="注 册"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/input_layout"
+        android:background="@mipmap/login_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/phone_layout"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:singleLine="true"
+                android:background="@null"
+                android:textSize="14sp"
+                android:hint="手机号"
+                android:textColorHint="@color/base_color_text_gray"
+                android:drawableLeft="@mipmap/de_btn_main_personal_information"
+                android:id="@+id/editText_phone2"
+                android:layout_weight="1"
+                android:textCursorDrawable="@null"
+                />
+            <Button
+                android:onClick="sendValidateClick"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="获取验证码"
+                android:textSize="11dp"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_button_bg"
+                android:id="@+id/button3_get_validateNumber"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@mipmap/login_line"
+            android:layout_below="@+id/phone_layout"
+            android:layout_alignParentStart="true">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_layout"
+            android:layout_alignParentStart="true"
+            android:id="@+id/password_layout"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/de_btn_main_privacy"
+                android:ems="10"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:background="@null"
+                android:textColorHint="@color/base_color_text_gray"
+                android:hint="密码"
+                android:textCursorDrawable="@null"
+                android:id="@+id/editText_password2"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:ems="4"
+                android:background="@null"
+                android:textColorHint="@color/base_color_text_gray"
+                android:hint="验证码"
+                android:textCursorDrawable="@null"
+                android:id="@+id/editText_validate_number"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/linear_line2"
+            android:background="@mipmap/login_line"
+            android:layout_below="@+id/password_layout"
+            android:layout_alignParentStart="true">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注 册"
+        android:onClick="registerNewUserClick"
+        android:id="@+id/button2_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/input_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_bg"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
+</RelativeLayout>

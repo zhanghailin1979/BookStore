@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/pay_bookImage2"
+        android:layout_alignTop="@+id/textView5_bookname"
+        android:layout_alignStart="@+id/textView6_Id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书名"
+        android:layout_weight="1"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:id="@+id/textView5_bookname"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView6_Id"
+        android:layout_toEndOf="@+id/pay_bookImage2" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x2"
+        android:id="@+id/textView5_count_total"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/textView6_discount_price"
+        android:layout_toEndOf="@+id/textView6_discount_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:id="@+id/textView6_discount_price"
+        android:layout_alignBottom="@+id/pay_bookImage2"
+        android:layout_alignStart="@+id/textView5_bookname" />
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:id="@+id/button_delete2"
+        android:src="@drawable/btn_delete_bg"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已付款"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/textView5_bookname"
+        android:layout_alignStart="@+id/button_delete2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单编号："
+        android:id="@+id/textView6_Id"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_toEndOf="@+id/linearLayout3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="付款"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/checkBox"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Demo\\BookStore\\pullToRefresh-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\Demo\\BookStore\\pullToRefresh-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\Demo\\BookStore\\pullToRefresh-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\Demo\\BookStore\\pullToRefresh-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\android_project\\BookStore\\pullToRefresh-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\android_project\\BookStore\\pullToRefresh-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\android_project\\BookStore\\pullToRefresh-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\android_project\\BookStore\\pullToRefresh-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    }
+]

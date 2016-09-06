@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="learning.moliying.com.bookstore.ui.LoginActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_bottom_text_press"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/textView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/def_button_bg"
+            android:text="返回"
+            android:onClick="backClick"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|top"
+            android:text="登 录"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end"
+            android:background="@drawable/def_button_bg"
+            android:text="注册"
+            android:onClick="openRegisterClick"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/input_layout"
+        android:background="@mipmap/login_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/phone_layout"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="手机号"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/base_color_text_gray"
+                android:drawableLeft="@mipmap/de_btn_main_personal_information"
+                android:id="@+id/editText_phone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@mipmap/login_line"
+            android:layout_below="@+id/phone_layout"
+            android:layout_alignParentStart="true">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_layout"
+            android:layout_alignParentStart="true"
+            android:id="@+id/password_layout"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/de_btn_main_privacy"
+                android:ems="10"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="密 码"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/base_color_text_gray"
+                android:id="@+id/editText_password"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/imageView_show_password"
+                android:src="@drawable/show_password_button_bg"
+                android:onClick="showHidePasswordClick"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登 录"
+        android:id="@+id/button2_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/input_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_bg"
+        android:textColor="@color/white"
+        android:onClick="loginClick"
+        android:textSize="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码?"
+        android:id="@+id/textView4_forget_password"
+        android:background="@null"
+        android:layout_below="@+id/button2_login"
+        android:layout_alignEnd="@+id/button2_login"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:onClick="forgetPasswordClick"
+        android:textColor="@drawable/press_color"
+        android:textSize="16sp"/>
+</RelativeLayout>

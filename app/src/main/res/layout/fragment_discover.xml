@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textColor="#ffffff"
+        android:background="@color/color_bottom_text_press"
+        app:pstsTabBackground="@color/transparent"
+        app:pstsIndicatorHeight="5dp"
+        app:pstsIndicatorColor="@color/colorAccent"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineHeight="2dp"
+        app:pstsShouldExpand="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:id="@+id/search_layout"
+        android:background="@drawable/search_bg_shape"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tv_search_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/search_drawable_left"
+            android:text="搜索"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/discover_loading"
+      >
+        <include layout="@layout/fragment_loading"
+            android:id="@+id/progressBar_loading"
+            android:visibility="gone" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>
